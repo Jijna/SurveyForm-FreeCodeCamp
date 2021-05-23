@@ -1,0 +1,132 @@
+
+<style>
+* {
+    box-sizing: border-box;
+  }
+    
+body {
+      padding: 50px;
+	 }
+	 
+.text-center {
+      text-align: center;
+      }	
+main {
+      background-color: #eee;
+	  padding: 20px;
+     }
+.bordered {
+     border-radius: 5px;
+    }	 
+.full-width {
+     width: 100%;
+     } 	
+.padded {
+      padding: 10px; 20px;
+        }		 
+.margin-down {
+    margin-bottom: 20px;
+    }	
+ #submit {
+    background-color: #4A4;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	}
+	
+#submit:hover {
+   background-color: #5B5;
+   }
+
+</style>
+
+
+
+<html>
+<body>
+     <header>
+  <h1 id="title" class="text-center">Survey Form</h1>
+  <p id="description" class="text-center"><b>Please take your time to fill this form</b> </p>
+      </header>
+  
+  <main class="bordered">
+  <form id="survey-form">
+    <label id="name-label" for="name">
+	  <b>Name</b>
+      <input id="name" class="full-width padded margin-down" type="text" name="name" required placeholder="Enter your Name"/>
+	  </label>
+		
+	 <label id="email-label" for="email">
+	    <b>Email</b>
+	    <input id="email" class="full-width padded margin-down" type="email" name="email" required placeholder="Enter your Email"/>
+	     </label>
+		 
+     <label id="number-label" for="number">
+	    <b>Age</b>
+	    <input id="number" class="full-width padded margin-down" type="number" name="age" min="15" max="100" placeholder="Enter your age" />
+	     </label>
+   
+   
+   <label id="dropdown-label" for="dropdown">
+     <b>Coding Experience</b>
+   <select id= "dropdown" class="margin-down">
+      <option value="0">0</option>
+	  <option value="1t2">Less than 2</option>
+	  <option value="gt21t5">2 to 5</option>
+	  <option value="gt5">Higter than 5</option>
+	</select>
+	
+	<fieldset id="gender" class="margin-down">
+	  <legend><b>Gender</b></legend>
+	<label id="radio-male-label" for="radio-male">
+	   <b>Male</b>
+	<input id="radio-male" type="radio" name="gender" value="male">
+	</label>
+	
+	<label id="radio-male-label" for="radio-female">
+	    <b>Female</b>
+	<input id="radio-female" type="radio" name="gender" value="female">
+	</label>
+	</fieldset>
+	
+	<fieldset id="gender" class="margin-down">
+	  <legend><b>Languages</b></legend>
+	  
+	          <label id="java-checkbox-label" for="java-checkbox">
+                 <input id="java-checkbox" type="checkbox" value="java" name="Languages">
+                 <b>Java</b>
+                 </label>
+
+              <label id="python-checkbox-label" for="python-checkbox">
+                 <input id="python-checkbox" type="checkbox" value="python" name="Languages">
+                 <b>Python</b>
+                 </label>
+
+              <label id="c-checkbox-label" for="c-checkbox">
+                 <input id="c-checkbox" type="checkbox" value="c" name="Languages">
+                 <b>C</b>
+                 </label>	
+
+              <label id="c++-checkbox-label" for="c++-checkbox">
+                 <input id="c++-checkbox" type="checkbox" value="c++" name="Languages">
+                 <b>C++</b>
+                 </label>
+                 </fieldset>	
+                 
+
+              <textarea id="comments" class="full-width padded margin-down" rows="4" cols="50" placeholder="Additional comments"/>Additional Comments:</textarea>
+
+               <button id="submit"  class="full-width padded margin-down bordered" type="submit"> <b>Submit</b> </button>
+
+ </form>
+ </main>
+   
+ </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+</html>
+
+
+
+
+
